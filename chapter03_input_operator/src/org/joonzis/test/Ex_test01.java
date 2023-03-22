@@ -20,6 +20,15 @@ public class Ex_test01 {
 			System.out.println("b = " +(a*b)/b);
 			
 			
+//			int c = a;
+//			
+//			a = b;
+//			
+//			b = c;
+//			
+//			System.out.println(a);
+//			System.out.println(b);
+				
 		
 	}
 }
