@@ -16,6 +16,7 @@ public class Ex_test02 {
 			
 			System.out.println( age >= 20 ? "성인" : "미성년자" );
 			
+			num.close();
 			
 		}
 }

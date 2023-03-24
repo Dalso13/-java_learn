@@ -18,9 +18,11 @@ public class Ex_test03 {
 			
 			
 			
-			System.out.print("해당 되는 등급 숫자 입력 VIP: 1 , 일반 : 2 ");
+			System.out.print("해당 되는 등급 숫자 입력 (VIP: 1 , 일반 : 2) : ");
 			int grd = ipt.nextInt();
 			
-			System.out.println(grd == 1 ? money * 0.8  : money * 0.95 );
+			System.out.println(grd == 1 ? (money * 80/100 ) + "원" : ( money * 95/100 ) + "원" );
+			
+			ipt.close();
 		}
 }

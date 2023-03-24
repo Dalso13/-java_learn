@@ -17,13 +17,17 @@ public class Ex_test04 {
 				int gender = ipt.nextInt();
 				
 				
-				boolean ks = (gender == 1) || (gender == 3);
+//				boolean ks = (gender == 1) || (gender == 3);
+//				
+//				if (ks) {System.out.println("남자");
+//					} else {System.out.println("여자");}
 				
-				if (ks) {System.out.println("남자");
-					} else {System.out.println("여자");}
+				String ks = (gender % 2 == 1) ? "남자" : "여자";
+				
+				System.out.println("성별 : " + ks);
 				
 				
-	
+				ipt.close();
 	
 	
 		}			

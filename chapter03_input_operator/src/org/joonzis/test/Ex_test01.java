@@ -19,6 +19,7 @@ public class Ex_test01 {
 			System.out.println("a = " + (a*b)/a);
 			System.out.println("b = " +(a*b)/b);
 			
+			num.close();
 			
 //			int c = a;
 //			

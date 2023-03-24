@@ -18,12 +18,17 @@ public class Ex_test05 {
 
 		
 		String gender = num.substring(6 , 7);
-		boolean gen = (gender.equals("3")) || (gender.equals("1"));
-		
+//		boolean gen = (gender.equals("3")) || (gender.equals("1")); 문자열
 
 		
-
+		int sum = Integer.parseInt(gender);
+		boolean gen = (sum % 2 == 1);  //정수
+		
+		
 		System.out.println(gen ? "남자" : "여자");
 		
+
+	
+		ipt.close();
 	}
 }

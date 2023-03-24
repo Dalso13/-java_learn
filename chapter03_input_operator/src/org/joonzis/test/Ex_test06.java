@@ -17,6 +17,11 @@ public class Ex_test06 {
 		
 		
 		
-		System.out.println( (su * 1.8 + 32) + "," + ((su - 32)/ 1.8 ));
+		System.out.println
+		( "섭씨 일 경우 화씨로 변환 : " + Math.round((su * 1.8 + 32)*100)/ 100.00 + 
+				" , " 
+				+ "화씨 일 경우 섭씨로 변환 : "+ Math.round(((su - 32) / 1.8 )*100) /100.00 );
+		
+		ipt.close();
 	}
 }

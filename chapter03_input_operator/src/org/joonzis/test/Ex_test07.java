@@ -20,16 +20,30 @@ public class Ex_test07 {
 			
 			double bmi = k/((m/100)*(m/100));
 				
-			
-					if(bmi >= 25) {
-						System.out.println("과체중");
-					} else if(bmi >= 20) {
-						System.out.println("정상");
-					}
-					else  {
-					System.out.println("저체중");
-					} 
+			// if 문 사용
+//					if(bmi >= 25) {
+//						System.out.println("과체중");
+//					} else if(bmi >= 20) {
+//						System.out.println("정상");
+//					}
+//					else  {
+//					System.out.println("저체중");
+//					} 
 					
+			// 연산자 사용
+				
+				String result = (bmi >= 25) ? "과체중" : 
+					(bmi >= 20) ? "정상" : "저체중";
+				
+				System.out.println("체질량 지수 : " + Math.round(bmi*100)/100.0  
+						+  ", 체중 범위 : " + result );
+			
+				
+			
+			
+			
+			
+					ipt.close();
 					
 		}
 	}
