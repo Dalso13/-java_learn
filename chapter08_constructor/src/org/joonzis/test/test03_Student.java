@@ -23,7 +23,7 @@ public class test03_Student {
 		System.out.println("국어 " + grade.kor);
 		System.out.println("영어 " + grade.eng);
 		System.out.println("수학 " + grade.mat);
-		System.out.println("평균 " + grade.getAverage());
+		System.out.println("평균 " + grade.average);
 		System.out.println("학점 " + grade.getGrade());
 	}
 }

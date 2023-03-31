@@ -21,6 +21,7 @@ public class test03_Grade {
 		this.kor = kor;
 		this.eng = eng;
 		this.mat = mat;
+		average = getAverage();
 
 	}
 	

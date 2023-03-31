@@ -13,7 +13,7 @@ package org.joonzis.test;
 public class test04_Coordinate {
 	 int x;
 	 int y;
-	 
+	 public test04_Coordinate() {}
 
 	 
 	 public test04_Coordinate(int x, int y) {
