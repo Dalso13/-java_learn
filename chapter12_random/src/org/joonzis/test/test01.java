@@ -32,7 +32,7 @@ public class test01 {
 		}
 		
 		for (int i = 0; i < sum.length; i++) {					// 중복값 없애기 중요!!
-				sum[i] = rnd.nextInt(10)+1;
+				sum[i] = rnd.nextInt(45)+1;
 			for (int j = 0; j < i; j++) {
 				if (sum[i] == sum[j]) {
 					i--;
