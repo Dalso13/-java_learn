@@ -25,19 +25,20 @@ package org.joonzis.test;
 
 public class test03_Day {
 	String schedule;
-	
 	public test03_Day() {}
 	
-	public test03_Day(String schedule) {
-		this.schedule = schedule;
+	//
+
+	public String getSchedule() {
+		return schedule;
 	}
 	void setSchedule(String schedule) {
-		
+		this.schedule = schedule;
 	}
-	String getSchedule() {
-		
-	}
-	void output() {
-		System.out.println("오늘 할일 : " schedule);
+	void output(String week) {
+		if(getSchedule() == null || getSchedule().equals("")) {
+			System.out.println(	week + " : " + "없음");
+		} else
+		System.out.println(	week + " : " + getSchedule());
 	}
 }

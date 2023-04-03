@@ -11,7 +11,6 @@ public class test02_Song {
 	String title;
 	String country;
 	
-	public test02_Song() {}
 	public test02_Song(String title, String country) {
 		this.title = title;
 		this.country = country;
