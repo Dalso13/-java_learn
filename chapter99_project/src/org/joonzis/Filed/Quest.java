@@ -3,9 +3,10 @@ package org.joonzis.Filed;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Quest {
-	FiledStart fs;
-	Fight fight = new Fight();
+import org.joonzis.name.Player;
+import org.joonzis.status.PlayerStatus;
+
+public class Quest	implements Player {
 	Scanner sc = new Scanner(System.in);
 	Random ran = new Random();
 	
@@ -14,10 +15,8 @@ public class Quest {
 	public void quest() {
 		ran.setSeed(System.currentTimeMillis());
 		int num = ran.nextInt(10)+1;
-		System.out.println("-------------------");
-		fs = new FiledStart();
 		if (num < 6) {
-			fs.filedStart();
+			filedStart.filedStart();
 		} else if (num >= 6) {
 			fight.fightStart();
 		}
